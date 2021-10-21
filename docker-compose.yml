@@ -1,0 +1,14 @@
+version: '3'
+services:
+  dropbox_backupagent:
+    container_name: dropbox_BackupAgent
+    build: .
+    volumes:
+      - {Place on local machine for storage}:/usr/src/app/MyCloud
+    environment:
+      DROPBOX_TOKEN: {Your token}
+      DROPBOX_LOCATION: {Filepath to file in dropbox}
+      LOCAL_LOCATION: {Filepath place on local machine where file will be copied to}
+      LOG_LOCATION: ./backupLog.log
+    command: python -u KeypassBackup.py
+    restart: unless-stopped
