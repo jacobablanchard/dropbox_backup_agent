@@ -5,7 +5,7 @@ This is a small project I used to practice using API's and learning about contai
 ## So, what does it do?
 
 This program will copy whatever is in the DROPBOX_LOCATION filepath on Dropbox to the LOCAL_LOCATION filepath.
-For my use case, I was copying my Keepass database to my local NAS
+For my use case, I was copying my Keepass database in Dropbox to my local NAS
 
 ## Ok, so that's kinda cool - How do I run it?
 
